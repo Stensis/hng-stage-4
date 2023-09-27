@@ -23,9 +23,6 @@ const App = () => {
   return (
     <div className='app bg-black'>
       <Navbar isPageTop={isPageTop} selectedPage={selectedPage} setSelectedPage={setSelectedPage} />
-
-      <div className='w-5/6 mx-auto md:h-full'>{isAboveMediumScreen && <Dots selectedPage={selectedPage} setIsPageTop={setSelectedPage} />}</div>
-
       <LandingPage setSelectedPage={setSelectedPage} />
       <LineGradient />
       <div className='w-5/6 mx-auto'>
